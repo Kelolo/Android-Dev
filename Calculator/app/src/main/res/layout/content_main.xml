@@ -94,7 +94,6 @@
         android:id="@+id/textView4"
         android:layout_alignBaseline="@+id/percentTf"
         android:layout_alignBottom="@+id/percentTf"
-        android:layout_toRightOf="@+id/percentTf"
         android:layout_toEndOf="@+id/percentTf"
         android:textSize="18sp" />
 
