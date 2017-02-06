@@ -14,7 +14,88 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="36dp"
+        android:id="@+id/resultTv"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="of"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:layout_below="@+id/percentTf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/numTf"
+        android:hint="Enter Number..."
+        android:textAlignment="center"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/percentTf"
+        android:layout_alignStart="@+id/percentTf" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numTf"
+        android:id="@+id/calBt"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_alignRight="@+id/numTf"
+        android:layout_alignEnd="@+id/numTf"
+        android:layout_alignLeft="@+id/numTf"
+        android:layout_alignStart="@+id/numTf" />
+
+    <TextView
+        android:text="What is "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:layout_below="@+id/resultTv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/percentTf"
+        android:hint="Enter Percentage..."
+        android:textAlignment="center"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/percentTf"
+        android:layout_alignBottom="@+id/percentTf"
+        android:layout_toRightOf="@+id/percentTf"
+        android:layout_toEndOf="@+id/percentTf"
+        android:textSize="18sp" />
+
 </RelativeLayout>
