@@ -13,13 +13,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:weightSum="100">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:background="@color/colorAccent"
-            android:layout_height="170dp">
+            android:background="@android:color/holo_blue_bright"
+            android:layout_height="0dp"
+            android:layout_weight="34">
 
             <TextView
                 android:text="567"
@@ -38,14 +40,15 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:weightSum="4"
-            android:layout_height="85dp">
+            android:layout_height="0dp"
+            android:layout_weight="16.5">
 
             <Button
                 android:text="7"
                 android:id="@+id/btn7"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:background="@android:color/background_light"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
@@ -55,7 +58,7 @@
                 android:id="@+id/btn8"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:background="@android:color/background_light"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
@@ -65,7 +68,7 @@
                 android:id="@+id/btn9"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:background="@android:color/background_light"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp" />
@@ -74,7 +77,7 @@
                 android:id="@+id/ibtnDivide"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:background="#00ffffff"
                 android:src="@drawable/divide" />
         </LinearLayout>
@@ -83,11 +86,12 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:weightSum="4"
-            android:layout_height="85dp">
+            android:layout_height="0dp"
+            android:layout_weight="16.5">
 
             <Button
                 android:text="4"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/btn4"
                 android:layout_weight="1"
@@ -97,7 +101,7 @@
 
             <Button
                 android:text="5"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/btn5"
                 android:layout_weight="1"
@@ -107,7 +111,7 @@
 
             <Button
                 android:text="6"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/btn6"
                 android:layout_weight="1"
@@ -116,7 +120,7 @@
                 android:textColor="@android:color/black" />
 
             <ImageButton
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/ibtnMultiply"
                 android:layout_weight="1"
@@ -128,11 +132,13 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:weightSum="4"
-            android:layout_height="85dp">
+            android:layout_height="0dp"
+            android:id="@+id/hlo1"
+            android:layout_weight="16.5">
 
             <Button
                 android:text="1"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/btn1"
                 android:layout_weight="1"
@@ -142,7 +148,7 @@
 
             <Button
                 android:text="2"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/btn2"
                 android:layout_weight="1"
@@ -152,7 +158,7 @@
 
             <Button
                 android:text="3"
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/btn3"
                 android:textSize="24sp"
@@ -161,7 +167,7 @@
                 android:textColor="@android:color/black" />
 
             <ImageButton
-                android:layout_width="96dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/ibtnSubtract"
                 android:layout_weight="1"
@@ -173,22 +179,28 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="85dp">
+            android:layout_height="0dp"
+            android:layout_weight="16.5"
+            android:weightSum="100">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="192dp"
+            <RelativeLayout
+
                 android:layout_height="match_parent"
-                android:gravity="center_vertical|center_horizontal">
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_weight="50"
+                android:layout_width="0dp">
+
 
                 <Button
                     android:text="Clear"
                     android:id="@+id/btnClear"
                     android:textSize="24sp"
-                    android:background="@color/colorAccent"
-                    android:layout_width="150dp"
-                    android:layout_height="50dp" />
-            </LinearLayout>
+                    android:background="@android:color/holo_blue_bright"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </RelativeLayout>
 
             <Button
                 android:text="0"
@@ -197,15 +209,17 @@
                 android:textSize="24sp"
                 android:background="@android:color/background_light"
                 android:textColor="@android:color/black"
-                android:layout_width="96dp"
-                android:gravity="center" />
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="25" />
 
             <ImageButton
-                android:layout_width="96dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ibtnPlus"
                 android:background="@android:color/background_light"
-                android:src="@drawable/add" />
+                android:src="@drawable/add"
+                android:layout_weight="25" />
         </LinearLayout>
 
     </LinearLayout>
@@ -215,12 +229,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/ibtnEqual"
         android:background="@color/colorPrimaryDark"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="false"
         android:layout_alignParentRight="true"
         android:layout_alignWithParentIfMissing="false"
-        android:paddingTop="112dp"
-        android:paddingRight="8dp"
-        android:src="@drawable/equal" />
+        android:src="@drawable/equal"
+        android:paddingTop="114dp"
+        android:paddingRight="7dp" />
 
 </RelativeLayout>
