@@ -1,3 +1,7 @@
 # Android-Dev
 Android Projects
-https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjr2t_Ikf_RAhUDWCYKHRkzDcEQjRwIBw&url=http%3A%2F%2Fwww.jqueryscript.net%2Flightbox%2FResponsive-Touch-enabled-jQuery-Image-Lightbox-Plugin.html&psig=AFQjCNH-GbI-wEsdwfiPBIXkZD8_McPtHA&ust=1486596475755158
+Calculater
+It has basic add, minus, multiply, divide functionality
+Good for practise basic Android programming skills
+
+<img src="https://cloud.githubusercontent.com/assets/17132841/22716438/0d6478d6-ed64-11e6-84ae-bbf4b2d8d387.png" width="90%"></img> 
