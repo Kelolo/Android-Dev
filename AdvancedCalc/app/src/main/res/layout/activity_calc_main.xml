@@ -183,7 +183,7 @@
 
                 <Button
                     android:text="Clear"
-                    android:id="@+id/button18"
+                    android:id="@+id/btnClear"
                     android:textSize="24sp"
                     android:background="@color/colorAccent"
                     android:layout_width="150dp"
@@ -193,7 +193,7 @@
             <Button
                 android:text="0"
                 android:layout_height="match_parent"
-                android:id="@+id/button16"
+                android:id="@+id/btn0"
                 android:textSize="24sp"
                 android:background="@android:color/background_light"
                 android:textColor="@android:color/black"
@@ -210,23 +210,17 @@
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtnEqual"
+        android:background="@color/colorPrimaryDark"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:paddingTop="112dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/equal" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton6"
-            android:background="@color/colorPrimaryDark"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="false"
-            android:layout_alignParentRight="true"
-            android:layout_alignWithParentIfMissing="false"
-            android:paddingTop="112dp"
-            android:paddingRight="8dp"
-            android:src="@drawable/equal" />
-    </RelativeLayout>
 </RelativeLayout>
